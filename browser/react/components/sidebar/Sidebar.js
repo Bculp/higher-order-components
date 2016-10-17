@@ -13,6 +13,14 @@ export default function () {
       <section>
         <Link to="/artists" activeClassName="menu-item active" className="menu-item">ARTISTS</Link>
       </section>
+      <section>
+        <h3>PLAYLISTS</h3>
+          <ul className = "list-unstyled">
+            <li>
+              <Link to="/playlists" className="btn btn-outline-secondary">+ PLAYLIST</Link>
+            </li>
+          </ul>
+      </section>
     </sidebar>
   );
 }

@@ -19,6 +19,9 @@ import ArtistsContainer from './components/all-artists/ArtistsContainer';
 import ArtistContainer from './components/artist/ArtistContainer';
 import ArtistAlbums from './components/artist/ArtistAlbums';
 import ArtistSongs from './components/artist/ArtistSongs';
+import PlaylistContainer from './components/playlist/PlaylistContainer';
+
+import Playlist from './components/playlist/Playlist';
 
 export default () => (
   <Router history={browserHistory}>
@@ -31,6 +34,7 @@ export default () => (
         <Route path="albums" component={ArtistAlbums} />
         <Route path="songs" component={ArtistSongs} />
       </Route>
+      <Route path="playlists" component={PlaylistContainer} />
     </Route>
   </Router>
 );

@@ -9,6 +9,9 @@ export default function (props) {
   return (
     <div>
       <h3>Artists</h3>
+      <form className="form-group">
+        <input className="form-control" name="post" type="text" />
+      </form>
       <div className="list-group">
         {
           artists.map(artist => (
